@@ -30,6 +30,8 @@ class MovieDetails extends Component {
   }
 
   render() {
+    const { match } = this.props;
+    const { id } = match.params;
     const { movie, loading } = this.state;
     if (loading) return <Loading>Carregando...</Loading>;
     const { title, storyline, imagePath, genre, rating, subtitle } = movie;
@@ -42,7 +44,7 @@ class MovieDetails extends Component {
         <p>{ `Storyline: ${storyline}` }</p>
         <p>{ `Genre: ${genre}` }</p>
         <p>{ `Rating: ${rating}` }</p>
-
+        <Link to={ `${id}/edit` }>EDITAR</Link>
         <Link to="/">VOLTAR</Link>
       </div>
     );
