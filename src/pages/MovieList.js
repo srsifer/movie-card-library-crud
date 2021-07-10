@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import '../App.css';
 
 import MovieCard from '../components/MovieCard';
 import { Loading } from '../components';

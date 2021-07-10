@@ -1,5 +1,95 @@
+
 body {
-  background-color: whitesmoke;
+  background-color: rgb(51, 61, 73);
   box-sizing: border-box;
+  font-size: 16px;
 }
 
+.movie-card-header {
+  align-items: center;
+  background-color: #1f1c1c;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  top: 0;
+}
+
+.page-title {
+  color: #ca0d00;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  font-family: fantasy;
+}
+
+.movie-list {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 48px 30px;
+}
+
+.movie-card {
+  background-color: rgba(241, 241, 241, 0.356);
+  border: 1px solid rgba(223, 9, 9, 0.932);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  margin: 5px;
+  overflow: hidden;
+  width: 300px;
+}
+.movie-card:hover {
+ transform: scale(1.2);
+   transition-duration: 0.8s;
+}
+
+.movie-card-image {
+  width: 100%;
+}
+
+.movie-card-body {
+  flex: 1 1 auto;
+  padding: 20px;
+}
+
+.movie-card-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 12px;
+  color: #ffffff;
+}
+
+.movie-card-subtitle {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.movie-card-storyline {
+  font-size: 14px;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.movie-card-link {
+  color: #ffffff;
+}
+
+.rating {
+  background-color: #007bff;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 3px 9px;
+}
+
+.movie-card-rating {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 20px;
+}

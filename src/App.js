@@ -5,11 +5,12 @@ import MovieDetails from './pages/MovieDetails';
 import NewMovie from './pages/NewMovie';
 import EditMovie from './pages/EditMovie';
 import NotFound from './pages/NotFound';
+import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
-      <div>Movie Card Library CRUD</div>
+      <div><h1 className="movie-card-header">Movie Card Library CRUD</h1></div>
       <Switch>
         <Route exact path="/"><MovieList /></Route>
         <Route path="/movies/new"><NewMovie /></Route>
