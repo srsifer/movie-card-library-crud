@@ -10,7 +10,15 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
-      <div><h1 className="movie-card-header">Movie Card Library CRUD</h1></div>
+      <div
+        className="movie-card-header"
+      >
+        <h1
+          className="page-title"
+        >
+          Movie Card Library CRUD
+        </h1>
+      </div>
       <Switch>
         <Route exact path="/"><MovieList /></Route>
         <Route path="/movies/new"><NewMovie /></Route>

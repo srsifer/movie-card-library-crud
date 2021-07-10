@@ -8,11 +8,11 @@ class MovieCard extends React.Component {
     const { movie } = this.props;
     const { title, storyline, imagePath, id } = movie;
     return (
-      <div data-testid="movie-card">
+      <div className="movie-card" data-testid="movie-card">
         <img className="movie-card-image" src={ imagePath } alt={ title } />
         <h2 className="movie-card-title">{title}</h2>
         <p className="movie-card-storyline">{storyline}</p>
-        <Link to={ `movies/${id}` }>VER DETALHES</Link>
+        <Link className="movie-card-link" to={ `movies/${id}` }>VER DETALHES</Link>
       </div>
     );
   }
